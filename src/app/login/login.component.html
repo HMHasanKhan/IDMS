@@ -1,0 +1,200 @@
+<app-header></app-header>
+
+<!-- <head>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/webrtc-adapter/3.3.3/adapter.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script>
+    <script type="text/javascript" src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
+  </head> -->
+
+
+
+  <section class="wellcome_area clearfix" id="home">
+    <div class="container h-80">
+        <div class="row h-80 align-items-center">
+            <div class="col-12 col-md">
+              
+              <div class="wellcome-heading">
+                 
+
+                  
+                  <br>  <br><br><br><br>
+                <h2 id="pageName">Login </h2>
+                
+
+<h3>IDMS</h3>
+
+ <div id="X">                
+<div class="col-lg-offset-3">   
+    <br><br><br>
+  <div style="overflow:hidden; width:520px; height:275px;">
+    
+
+  <qr-scanner 
+        [debug]="false"
+        [canvasWidth]="780"
+        [canvasHeight]="480" 
+        [stopAfterScan]="true"
+        [updateTime]="500">
+    </qr-scanner>
+ </div>
+</div> 
+
+
+<div class="container">
+      <div class="col-lg-12">
+       
+      
+      <br/><br/>
+      
+      
+      
+      
+      
+        <div>
+        <!-- <h1 class="col-lg-offset-5">GET DATA</h1><br> -->
+        <div class="col-md-">
+          <div class="col-lg-6">
+          <input type="text" class="form-control" #a placeholder="Identity Address" id="add" name="add" value="" >
+          </div>
+          <div class="col-lg-6">
+            <input type="password" class="form-control" #b placeholder="Password" id="pw" name="pw" value="" >
+            </div>
+            <br><br><br><br><br><br>
+          <button class="btn btn-warning col-lg-offset-3 col-lg-6" (click)="getDataA(a.value,b.value)">View Details</button>
+        </div>
+        </div>
+      </div>
+      </div>
+      
+      <br/><br/><br/>
+ </div>
+ 
+ 
+    
+
+    <div id="Y" style="display:none;margin-top: -100px;">
+      
+
+        <div class="limiter">
+            <div class="container-table100">
+              <div class="wrap-table100">
+                <div class="table100">
+                  <table>
+                    <thead>
+                      <tr class="table100-head">
+                        <th class="column1">Attributes</th>
+                        <th class="column2">Details</th>
+                        
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                          <td class="column1">Name</td>
+                          <td class="column2">{{name}}</td>
+                          
+                        </tr>
+                        <tr>
+                          <td class="column1">Email Address</td>
+                          <td class="column2">{{email}}</td>
+                          
+                        </tr>
+                        <tr>
+                          <td class="column1">Date Of Birth</td>
+                          <td class="column2">{{DOB}}</td>
+                          
+                        </tr>
+                        <tr>
+                          <td class="column1">Gender</td>
+                          <td class="column2">{{gender}}</td>
+                          
+                        </tr>
+                        <tr>
+                          <td class="column1">National Identity</td>
+                          <td class="column2">{{nid}}</td>
+                          
+                        </tr>
+                        
+                        
+                        
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            
+          <br/><br/><br/><br/>
+          <div class="limiter" style="margin-top: -580px;">
+            <div class="container-table100">
+                
+              <div class="wrap-table100">
+                <div class="table100">
+                  <table>
+                    <thead>
+                      <tr class="table100-head">
+                        <th class="column1">Endorser</th>
+                        <th class="column2">Endorser Name</th>
+                        <th class="column3">Verification Status</th>
+                      </tr>
+                    </thead>
+                    <tbody id="tbody">
+                        <!-- <tr>
+                          <td class="column1">{{Eadd}}</td>
+                          <td class="column2">{{Ename}}</td>
+                          <td class="column3">{{EVerification}}</td>
+                          
+                        </tr> -->
+                        
+                        
+                  
+
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="btn btn-warning col-lg-offset-3 col-lg-6" style="margin-top: -300px;" id="endbtn" (click)="Apply()">Apply For Endorsements</button>
+        
+          <button class="btn btn-warning col-lg-offset-3 col-lg-6" style="margin-top: -260px;" id="endbtn" (click)="logout()">Logout</button>
+        
+          
+          
+
+
+
+
+
+
+    
+    </div>
+
+
+<!-- <div class="row">
+  <h1 class="" id="output">{{name}}</h1><br>
+</div>
+</div>
+</div>
+</div>
+<h1 class="" id="output">{{name}}</h1>
+<h1 class="" id="output">{{type}}</h1> -->
+  
+    <!-- <div>
+        <button class="btn-warning col-lg-5" (click)="Apply()">Apply For Endorsement</button>
+       
+       
+            
+          </div> -->
+        
+        </div>
+        </div>
+        </div>
+      </div>
+    <style>
+ 
+
+    </style>
+
+

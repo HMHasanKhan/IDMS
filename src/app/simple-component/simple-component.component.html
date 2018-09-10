@@ -1,0 +1,57 @@
+    <head>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/webrtc-adapter/3.3.3/adapter.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script>
+    <script type="text/javascript" src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
+	</head>
+
+
+
+  
+  <div class="container">
+	<div class="row">
+	  <div class="col-lg-12">
+		<div class="row">
+		  <div>
+			<h1 class="col-lg-offset-5">SET DATA</h1><br>
+			<div>
+			  <div class="col-lg-6">
+				<input type="text" class="form-control" #a placeholder="Name" id="name" name="name">
+			  </div>
+			  <div class="col-lg-6">
+				<input type="text" class="form-control" #b placeholder="Age" id="age" name="Age">
+				</div>
+				<div class="col-lg-6">
+					<input type="text" class="form-control" #c placeholder="Address" id="pAddress" name="pAddress">
+					</div>
+			  <br><br><br>
+			  <button class="btn btn-success col-lg-offset-4 col-lg-4" (click)="createWallet(a.value,b.value,c.value)">Set Data</button>
+			</div>
+		  </div>
+		</div>
+		<br/><br/><br/>
+		<div class="row">
+		  <div>
+			<h1 class="col-lg-offset-5">GET DATA</h1><br>
+			<div class="col-lg-offset-3">
+			  <div class="col-lg-8">
+				<input type="text" class="form-control" #d placeholder="Enter Address" id="add" name="add" >
+			  </div>
+			  <br><br><br>
+			  <button class="btn btn-warning col-lg-offset-2 col-lg-4" (click)="getDataA(d.value)">Get Detials</button>
+			</div>
+		  </div>
+		</div>
+		<br/><br/><br/>
+		<div class="row">
+		  <h1 class="col-lg-offset-5" id="output">{{output}}</h1><br>
+		</div>
+	  </div>
+	</div>
+
+
+	<div>
+		<qr-code [value]="Aqr" [size]="150"></qr-code>
+	</div>
+ 
+	
+	

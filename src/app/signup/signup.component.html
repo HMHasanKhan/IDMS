@@ -1,0 +1,92 @@
+<app-header></app-header>
+<head>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/webrtc-adapter/3.3.3/adapter.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script>
+  <script type="text/javascript" src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
+</head>
+
+
+
+<section class="wellcome_area clearfix" id="home">
+	<div class="container h-100">
+			<div class="row h-100 align-items-center">
+					<div class="col-12 col-md">
+							<div class="wellcome-heading">
+								<h2>Sign Up </h2>
+								
+
+							
+
+<div class="container">
+	<div class="">
+<br/><br/>
+	  <!-- <div class="col-lg-12"> -->
+<div id="X">
+		  <div>
+			<!-- <h1 class="col-lg-10"></h1><br> -->
+			<div>
+			  <div class="col-lg-8 offset-1">
+				<input type="text" class="form-control" #a placeholder="Name" id="AGE" name="AGE" required>
+				<br>
+				</div>
+
+
+			
+				<div class="col-lg-4 offset-1">
+					<input type="password" class="form-control" #b placeholder="Password" id="pw" name="pw" required>
+					<br>
+					</div>
+					<div class="col-lg-4">
+						<input type="password" class="form-control" #z  placeholder="Password" id="pw1" name="pw" required>
+						<br>
+						</div>
+
+				<div class="col-lg-8 offset-1">
+				<input type="text" class="form-control" #f placeholder="DOB" id="age" name="age">
+				<br>
+				</div>
+
+					<div class="col-lg-8 offset-1">
+						<input class="form-control" #e placeholder="Email Address" id="" name="AGE" type="email">
+						<br>
+						</div>
+						<!-- <div class="col-lg-8 offset-1">
+							<input class="form-control" #g  placeholder="Gender" id="ni" name="ni" type="text">
+							
+							</div> -->
+							<div class="col-lg-8 offset-1">
+							<select id="mySelect" #g class="form-control">
+									<option value="none">Select One</option>
+								<option value="male">male</option>
+								<option value="female">female</option>
+								<option value="other">other</option>
+								
+							</select>
+							<br>
+						</div>
+
+						<div class="col-lg-8 offset-1">
+							<input class="form-control" #h  placeholder="National Identity Number" id="nic" name="nic" type="text">
+							<br>
+							</div>
+			  <br><br><br>
+			  <button class="btn btn-warning col-lg-offset-3 col-lg-4" (click)="createAccount(a.value,b.value,e.value,f.value,g.value,h.value,z.value)">Register</button>
+			</div>
+			</div>
+		</div>
+    <!-- </div> -->
+    
+    <br><br><br>
+    <div id="qr" style="visibility:hidden;margin-left: 400px; margin-top: -200px;">
+      <qr-code [value]="Aqr" [size]="250"></qr-code>
+      <br><br>
+      </div>
+		
+		<div id="AA" style="align-content: center; visibility:hidden;">
+			<p style="color:black; font-size: 32px">Save this Address</p>
+      <p style="color:black; font-size: 32px" id="insert"></p>
+		</div>
+	
+</div>
+</div></div></div></div></div>
+

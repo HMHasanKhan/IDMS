@@ -1,0 +1,21 @@
+h3{
+    display: none;
+}
+
+button {
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    height: 100%;
+    font-weight: 700;
+    color: black;
+    letter-spacing: 1px;
+    font-size: inherit;
+    transition: all 0.3s;
+    outline: none;
+}
+
+button:hover {
+    color: white;
+    background: black;
+}
